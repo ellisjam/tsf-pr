@@ -372,3 +372,11 @@ footer {
 	opacity: 1;
 	bottom: 0px;
   }
+
+
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
