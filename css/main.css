@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+
+/* Add your colours and variables here */
+
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+  }
+
+:root {
+	--brand-color:#f00;
+	--link-color:#ffb06a;
+	--heading-color:rgb(41, 41, 41);
+	--text-color:#333;
+	--brand-font:'Montserrat', sans-serif;
+	--body-font:'Montserrat', sans-serif;
+}
+
+/* Sensible Defaults */
+
+* {
+	box-sizing:border-box;
+}
+body {
+	margin:0;
+}
+img {
+	max-width:100%;
+}
+a {
+	color:var(--link-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Text Styles */
+
+
+
+body {
+	color:var(--text-color);
+	font-family:var(--body-font);
+	background: #fcfcfc;
+	/* add global font family, size and color */
+}
+h1, h2, h3, h4, h5, h6 {
+	color:var(--heading-color);
+	font-family:var(--brand-font);
+	/* add global heading styles */
+}
+
+/* Components */
+
+.button {
+cursor: pointer !important;
+}
+.hero {
+
+}
+
+/* Page Styles */
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100VH;
+	overflow: hidden;
+}
+
+.marquee3k h1 {
+	font-size: 2rem;
+}
+
+.marquee-top span {
+	margin: 0 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.marquee-bottom span {
+	margin: 0 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.marqueem8-bottom {
+	display: flex;
+	align-self: flex-end;
+	bottom: 0;
+}
+
+.marquee-back-social .bottom .projects {
+	position: relative;
+	background: red;
+}
+
+.content-main {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+	position: fixed;
+}
+
+.content-main img {
+	height: 70%;
+	width: 100%;
+	max-height: 65VH;
+	object-fit: cover;
+	padding: 20px;
+}
+.backimg:hover {
+    cursor: pointer;
+	filter: invert(.75) sepia(0.7) saturate(5) hue-rotate(-37deg);
+}
+
+
+.logo-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logoimg .buttons {
+	cursor: pointer;
+}
+
+.logoimg .buttons button, button {
+	background: white;
+	color: 111;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	cursor: pointer !important;
+	margin: 10px;
+	padding: 20px 0px;
+	width: 180px;
+	opacity: 0.8;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.logoimg .buttons button:hover, button:hover {
+	background: black !important;
+	color: #ffb06a;
+	border: 3px solid black;
+	cursor: pointer;
+	opacity: 1;
+}
+
+span:hover {
+	color: #ffb06a;
+}
+
+.site-header {
+	position: fixed;
+    top: 0;
+	margin-top: 0;
+	padding-bottom: 10px;
+	z-index: 100000;
+	background: #fcfcfc;
+}
+
+.site-footer {
+	position: relative;
+	z-index: 100000;
+	background: #fcfcfc;
+	overflow: hidden;
+}
+
+.menu-items button {
+	margin-left: 20px;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 0px;
+	vertical-align: middle;
+	width: 100%;
+	opacity: 0.9;
+  }
+
+  .column img:hover {
+	opacity: 1;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+
+.img-grid {
+	  margin: auto;
+	  margin-top:45px;
+	  width: 100vw;
+  }
+
+  .marquee-back, .marquee-back .social {
+	  background: #fcfcfc;
+  }
+
+  
+
+ .marquee-back span {
+	  font-size: 2.5rem;
+  }
+  
+
+  .marquee-back span:hover {
+	  color: black;
+  }
+
+  .marquee-back:hover {
+	  cursor: pointer;
+  }
+
+  .contact-container {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+	position: fixed;
+}
+
+.contact-info {
+	margin: 40px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
+@media only screen and (min-width:2000px) {
+	.marquee3k h1 {
+		font-size: 4rem;
+	}
+    .marquee-back {
+		padding-bottom: 22px;
+	}
+	.marquee-back span {
+		font-size: 6.5rem;
+		padding-bottom: 20px;
+
+	}
+    
+	.marquee-back .social span {
+		background: #fcfcfc;
+        padding-bottom: 0;
+	}
+	.img-grid {
+		margin: auto;
+		margin-top:90px;
+		width: 100vw;
+	}
+
+}
+
+/*grid v2*/
+
+.row>*, .column {
+	padding: 0;
+	margin: 0;
+	--bs-gutter-x: 0;
+}
+
+.thumb-item {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	opacity: 1;
+	filter: saturate(100%);
+  }
+
+.thumb-item:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+  .thumb-item__image {
+	width: 100%;
+	height: 100%;
+  }
+  .thumb-item__info {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	box-sizing: border-box;
+	color: #000;
+	background: rgba(0,0,0,0.9);
+	transition: ease 0.3s;
+  }
+  .thumb-item__info h5 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #ffb06a;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	mix-blend-mode:screen;
+	opacity: 1;
+  }
+  .thumb-item__info p {
+	font-size: 12px;
+	margin: 4px 0 14px;
+  }
+ .thumb-item:hover .thumb-item__info {
+	opacity: 1;
+	bottom: 0px;
+  }
