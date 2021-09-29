@@ -125,7 +125,7 @@ cursor: pointer !important;
 }
 
 .content-main img {
-	height: 70%;
+	height: auto;
 	width: auto;
 	max-height: 50VH;
 	object-fit: contain;
@@ -414,4 +414,21 @@ footer {
 	  .thumb-item__info__txt h5 {
 		  display: none;
 	  }
+
+	  .logoimg .buttons button, button {
+		background: white;
+		color: 111;
+		border: 3px solid black;
+		border-radius: 50%;
+		font-weight: bold;
+		font-size: 1rem;
+		text-transform: uppercase;
+		cursor: pointer !important;
+		margin: 10px;
+		padding: 15px 0px;
+		width: 120px;
+		opacity: 0.8;
+		cursor: pointer;
+		transition: 0.5s ease;
+	}
   }
