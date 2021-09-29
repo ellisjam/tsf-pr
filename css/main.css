@@ -357,7 +357,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	font-size: 3rem;
+	font-size: 2.7rem;
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
@@ -370,7 +370,7 @@ footer {
 	font-size: 12px;
 	margin: 4px 0 14px;
   }
- .thumb-item:hover .thumb-item__info {
+ .thumb-item:hover .thumb-item__info,  .thumb-item:hover .thumb-item__info__txt {
 	opacity: 1;
 	bottom: 0px;
   }
