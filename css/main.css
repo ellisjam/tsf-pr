@@ -144,6 +144,7 @@ cursor: pointer !important;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 85vw;
 }
 
 .logoimg .buttons {
