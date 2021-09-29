@@ -94,10 +94,24 @@ cursor: pointer !important;
 	bottom: 0;
 }
 
-.marquee-back-social .bottom .projects {
-	position: relative;
-	background: red;
+.marquee-back, .marquee-back-social {
+	background: #fcfcfc;
 }
+
+
+.marquee-back span {
+	font-size: 2.5rem;
+}
+
+
+.marquee-back:hover {
+	cursor: pointer;
+}
+
+.marquee-top:hover, .marquee-bottom:hover, .marquee-back-social:hover, .marquee-projects-footer:hover {
+	color: #ffb06a;
+}
+
 
 .content-main {
 	display: flex;
@@ -232,24 +246,6 @@ span:hover {
 	  width: 100vw;
   }
 
-  .marquee-back, .marquee-back .social {
-	  background: #fcfcfc;
-  }
-
-  
-
- .marquee-back span {
-	  font-size: 2.5rem;
-  }
-  
-
-  .marquee-back span:hover {
-	  color: black;
-  }
-
-  .marquee-back:hover {
-	  cursor: pointer;
-  }
 
   .contact-container {
 	display: flex;
