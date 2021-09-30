@@ -408,7 +408,8 @@ footer {
 		font-weight: bold;
 		color: #ffb06a;
 		mix-blend-mode: normal;
-		background: radial-gradient(circle, rgba(0,0,0,0.33237044817927175) 0%, rgba(0,0,0,0.15029761904761907) 38%, rgba(0,0,0,0) 100%);		opacity: 1;
+		background: radial-gradient(circle, rgba(0,0,0,0.33237044817927175) 0%, rgba(0,0,0,0.15029761904761907) 38%, rgba(0,0,0,0) 100%);		
+		opacity: 1;
 	  }
 
 	  .thumb-item__info__txt h5 {
@@ -431,4 +432,14 @@ footer {
 		cursor: pointer;
 		transition: 0.5s ease;
 	}
+  }
+
+  .noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
   }
