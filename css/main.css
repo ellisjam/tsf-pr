@@ -25,9 +25,7 @@
 * {
 	box-sizing:border-box;
 }
-body {
-	margin:0;
-}
+
 img {
 	max-width:100%;
 }
@@ -45,6 +43,15 @@ body {
 	color:var(--text-color);
 	font-family:var(--body-font);
 	background: #fcfcfc;
+	/*background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FJlMNZntaoTY%2Fmaxresdefault.jpg&f=1&nofb=1");*/
+	background-size: cover;
+	opacity: 1;
+	background-repeat: repeat;
+	background-position: center;
+	background-size: 250%;
+	background-blend-mode: normal;
+	margin:0;
+	cursor: crosshair !important;
 	/* add global font family, size and color */
 }
 h1, h2, h3, h4, h5, h6 {
@@ -71,6 +78,45 @@ cursor: pointer !important;
 	height: 100VH;
 	overflow: hidden;
 }
+
+.content-main {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+	height: 100vh;
+	position: fixed;
+	overflow:scroll;
+}
+
+@media only screen and (max-width:600px) {
+	.content-main.about {
+		justify-content: start;
+	}
+
+}
+
+.content-main.news {
+	justify-content: start;
+	height:90%;
+	width: 75%;
+	margin: 4% 12.5%;
+	overflow: auto;
+}
+
+.content-main.news::-webkit-scrollbar {
+	display: none;
+  }
+
+.content-main img {
+	height: auto;
+	width: auto;
+	max-height: 50VH;
+	object-fit: contain;
+}
+
 
 .marquee3k h1 {
 	font-size: 2rem;
@@ -113,26 +159,6 @@ cursor: pointer !important;
 }
 
 
-.content-main {
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-	position: fixed;
-}
-
-.content-main img {
-	height: auto;
-	width: auto;
-	max-height: 50VH;
-	object-fit: contain;
-}
-
-
-
 .backimg:hover {
     cursor: pointer;
 	filter: invert(.75) sepia(0.7) saturate(5) hue-rotate(-37deg);
@@ -165,7 +191,7 @@ cursor: pointer !important;
 	width: 160px;
 	opacity: 0.8;
 	cursor: pointer;
-	transition: 0.5s ease;
+	transition: 0.2s ease;
 }
 
 .logoimg .buttons button:hover, button:hover {
@@ -183,8 +209,8 @@ span:hover {
 .site-header {
 	position: fixed;
     top: 0;
-	margin-top: 0;
-	padding-bottom: 10px;
+	margin-top: -10px;
+	padding-bottom: 1rem;
 	z-index: 100000;
 	background: #fcfcfc;
 }
@@ -193,6 +219,7 @@ span:hover {
 	position: relative;
 	z-index: 100000;
 	background: #fcfcfc;
+	padding-bottom:18px;
 	overflow: hidden;
 }
 
@@ -293,7 +320,7 @@ footer {
 		width: 180px;
 		opacity: 0.8;
 		cursor: pointer;
-		transition: 0.5s ease;
+		transition: 0.2s ease;
 	}
     
 	.marquee-back .social span {
@@ -326,7 +353,7 @@ footer {
 
 .thumb-item:hover {
 	opacity: 1;
-	cursor: pointer;
+	cursor: crosshair;
 }
 
   .thumb-item__image {
@@ -346,7 +373,7 @@ footer {
 	opacity: 0;
 	box-sizing: border-box;
 	color: #000;
-	background: rgba(0,0,0,0.9);
+	background: rgba(0,0,0,1);
 	transition: ease 0.3s;
   }
   .thumb-item__info h5, .thumb-item__info__txt h5 {
