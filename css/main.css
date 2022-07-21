@@ -168,8 +168,8 @@ cursor: pointer !important;
 }
 
 
-.backimg:hover {
-    cursor: pointer;
+.backimg {
+    cursor: crosshair !important;
 	filter: invert(.75) sepia(0.7) saturate(5) hue-rotate(-37deg);
 }
 
