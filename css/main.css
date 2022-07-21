@@ -189,7 +189,7 @@ cursor: pointer !important;
 .logoimg .buttons button, button {
 	background: white;
 	color: 111;
-	border: 3px solid black;
+	border: 2px solid black;
 	border-radius: 50%;
 	font-weight: bold;
 	font-size: 1.2rem;
