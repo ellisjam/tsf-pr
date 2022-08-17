@@ -296,8 +296,9 @@ span:hover {
 }
 
 .contact-info {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin: 40px;
+	max-width: 900px;
 }
 
 footer {
@@ -341,6 +342,11 @@ footer {
 		margin: auto;
 		margin-top:90px;
 		width: 100vw;
+	}
+	.contact-info {
+		font-size: 1.5rem;
+		margin: 40px;
+		max-width: 900px;
 	}
 
 }
