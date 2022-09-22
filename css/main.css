@@ -648,3 +648,7 @@ footer {
   .card.tone {
 	background-image: url("/images/tone.jpg");
   }
+
+  .card.ica {
+	background-image: url("/images/ica.jpg");
+  }
